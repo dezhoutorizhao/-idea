@@ -1,0 +1,255 @@
+{
+  "method": "BCCI-behavior-constrained-counterfactual-intervention",
+  "tasks": [
+    {
+      "task": "garden_mvrr_mod",
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.975,
+        "validation_zc_probe_acc": 0.825,
+        "validation_ze_probe_acc": 1.0
+      },
+      "base_race_config": {
+        "rank": 2,
+        "grad_rank": 8,
+        "mix": 1.0
+      },
+      "search_grid": {
+        "lambda_flip": [
+          0.3,
+          1.0,
+          3.0
+        ],
+        "trust_beta": [
+          0.0,
+          0.05,
+          0.1
+        ],
+        "lambda_probe": 1.0,
+        "lambda_ze": 1.0,
+        "lambda_anchor": 0.1,
+        "k_neighbors": 16
+      },
+      "hdmi_tune": {
+        "completeness": 0.05032628774642944,
+        "selectivity": 0.9474737048149109,
+        "reliability": 0.0955759362765709
+      },
+      "hdmi_test": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.04892270639538765,
+        "selectivity": 0.9350752830505371,
+        "reliability": 0.09298070519337998,
+        "n": 200
+      },
+      "race_test": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.014672571793198586,
+        "selectivity": 0.9517160654067993,
+        "reliability": 0.02889959948707885,
+        "n": 200
+      },
+      "selected_bcci_config": {
+        "lambda_flip": 3.0,
+        "trust_beta": 0.1
+      },
+      "selected_bcci_tune_metrics": {
+        "baseline_task_acc": 0.4875,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.4875,
+        "completeness": 0.7639274597167969,
+        "selectivity": 0.9668596386909485,
+        "reliability": 0.8534968026288386,
+        "n": 160
+      },
+      "bcci_test": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.753187358379364,
+        "selectivity": 0.9263052344322205,
+        "reliability": 0.8308240180941836,
+        "n": 200
+      },
+      "best_unconstrained_config": {
+        "lambda_flip": 3.0,
+        "trust_beta": 0.1
+      },
+      "best_unconstrained_tune_metrics": {
+        "baseline_task_acc": 0.4875,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.4875,
+        "completeness": 0.7639274597167969,
+        "selectivity": 0.9668596386909485,
+        "reliability": 0.8534968026288386,
+        "n": 160
+      },
+      "best_unconstrained_test": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.753187358379364,
+        "selectivity": 0.9263052344322205,
+        "reliability": 0.8308240180941836,
+        "n": 200
+      },
+      "mctr_reference_test": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.48,
+        "delta_task_acc": -0.020000000000000018,
+        "completeness": 0.8946058750152588,
+        "selectivity": 0.9898775219917297,
+        "reliability": 0.9398334287857317,
+        "n": 200
+      },
+      "macc_reference_test": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.06556775867938995,
+        "selectivity": 0.9923239868879318,
+        "reliability": 0.12300778395362492,
+        "n": 200,
+        "crossing_found_rate": 1.0,
+        "fallback_rate": 0.0,
+        "selected_alpha_hist": {
+          "0.05": 100,
+          "0.2": 8,
+          "0.5": 86,
+          "1.0": 6
+        },
+        "selected_alpha_mean": 0.27799999999999997
+      }
+    },
+    {
+      "task": "gss_subord_pp",
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.93125,
+        "validation_zc_probe_acc": 0.95,
+        "validation_ze_probe_acc": 1.0
+      },
+      "base_race_config": {
+        "rank": 4,
+        "grad_rank": 32,
+        "mix": 1.0
+      },
+      "search_grid": {
+        "lambda_flip": [
+          0.3,
+          1.0,
+          3.0
+        ],
+        "trust_beta": [
+          0.0,
+          0.05,
+          0.1
+        ],
+        "lambda_probe": 1.0,
+        "lambda_ze": 1.0,
+        "lambda_anchor": 0.1,
+        "k_neighbors": 16
+      },
+      "hdmi_tune": {
+        "completeness": 0.8908058404922485,
+        "selectivity": 0.9853383898735046,
+        "reliability": 0.935690527291268
+      },
+      "hdmi_test": {
+        "baseline_task_acc": 0.78,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.78,
+        "completeness": 0.8997628688812256,
+        "selectivity": 0.9670009016990662,
+        "reliability": 0.9321709782132023,
+        "n": 200
+      },
+      "race_test": {
+        "baseline_task_acc": 0.78,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.78,
+        "completeness": 0.8395190238952637,
+        "selectivity": 0.9780387878417969,
+        "reliability": 0.903500469417459,
+        "n": 200
+      },
+      "selected_bcci_config": {
+        "lambda_flip": 3.0,
+        "trust_beta": 0.1
+      },
+      "selected_bcci_tune_metrics": {
+        "baseline_task_acc": 0.84375,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.84375,
+        "completeness": 0.9988047480583191,
+        "selectivity": 0.997458815574646,
+        "reliability": 0.9981313275852511,
+        "n": 160
+      },
+      "bcci_test": {
+        "baseline_task_acc": 0.78,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.78,
+        "completeness": 0.999459981918335,
+        "selectivity": 0.9648997783660889,
+        "reliability": 0.981875860059569,
+        "n": 200
+      },
+      "best_unconstrained_config": {
+        "lambda_flip": 3.0,
+        "trust_beta": 0.1
+      },
+      "best_unconstrained_tune_metrics": {
+        "baseline_task_acc": 0.84375,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.84375,
+        "completeness": 0.9988047480583191,
+        "selectivity": 0.997458815574646,
+        "reliability": 0.9981313275852511,
+        "n": 160
+      },
+      "best_unconstrained_test": {
+        "baseline_task_acc": 0.78,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.78,
+        "completeness": 0.999459981918335,
+        "selectivity": 0.9648997783660889,
+        "reliability": 0.981875860059569,
+        "n": 200
+      },
+      "mctr_reference_test": {
+        "baseline_task_acc": 0.78,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.78,
+        "completeness": 0.9881648421287537,
+        "selectivity": 0.9848390221595764,
+        "reliability": 0.9864991285380328,
+        "n": 200
+      },
+      "macc_reference_test": {
+        "baseline_task_acc": 0.78,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.78,
+        "completeness": 0.16362963914871215,
+        "selectivity": 0.99856500685215,
+        "reliability": 0.28118324612731993,
+        "n": 200,
+        "crossing_found_rate": 1.0,
+        "fallback_rate": 0.0,
+        "selected_alpha_hist": {
+          "0.05": 70,
+          "0.1": 42,
+          "0.2": 62,
+          "0.5": 26
+        },
+        "selected_alpha_mean": 0.1655
+      }
+    }
+  ],
+  "model_name": "EleutherAI/pythia-70m",
+  "layer_idx": -1,
+  "hdmi_alpha": 1.0,
+  "hdmi_inner_steps": 30
+}
