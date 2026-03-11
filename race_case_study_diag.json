@@ -1,0 +1,247 @@
+{
+  "filler_gap_hierarchy": {
+    "probe_metrics": {
+      "interv": 0.44375,
+      "vzc": 0.95,
+      "vze": 0.96,
+      "test_factual_vzc": 0.95,
+      "test_cf_vzc": 0.95
+    },
+    "cf_completeness_ceiling_mean": 0.9269033670425415,
+    "cf_completeness_ceiling_median": 0.9977155923843384,
+    "basis_diag": {
+      "mean_grad_norm_retention": 0.8284208178520203,
+      "median_grad_norm_retention": 0.828420877456665,
+      "mean_grad_cosine": 0.8284212350845337,
+      "median_grad_cosine": 0.8284212946891785
+    },
+    "hdmi": {
+      "baseline_task_acc": 0.55,
+      "after_task_acc": 0.0,
+      "delta_task_acc": -0.55,
+      "completeness": 0.9999997019767761,
+      "selectivity": 0.5477944016456604,
+      "reliability": 0.7078386417860582,
+      "n": 200
+    },
+    "race": {
+      "baseline_task_acc": 0.55,
+      "after_task_acc": 0.0,
+      "delta_task_acc": -0.55,
+      "completeness": 0.9985875487327576,
+      "selectivity": 0.8786448836326599,
+      "reliability": 0.9347844464634003,
+      "n": 200
+    }
+  },
+  "cleft_mod": {
+    "probe_metrics": {
+      "interv": 0.475,
+      "vzc": 0.65,
+      "vze": 0.88,
+      "test_factual_vzc": 0.5,
+      "test_cf_vzc": 0.5
+    },
+    "cf_completeness_ceiling_mean": 0.5,
+    "cf_completeness_ceiling_median": 0.5,
+    "basis_diag": {
+      "mean_grad_norm_retention": 0.25459495186805725,
+      "median_grad_norm_retention": 0.25459495186805725,
+      "mean_grad_cosine": 0.2545948922634125,
+      "median_grad_cosine": 0.25459492206573486
+    },
+    "hdmi": {
+      "baseline_task_acc": 0.5,
+      "after_task_acc": 0.0,
+      "delta_task_acc": -0.5,
+      "completeness": 0.5,
+      "selectivity": 0.4764508903026581,
+      "reliability": 0.48794147718687336,
+      "n": 200
+    },
+    "race": {
+      "baseline_task_acc": 0.5,
+      "after_task_acc": 0.5,
+      "delta_task_acc": 0.0,
+      "completeness": 0.5,
+      "selectivity": 0.8780702352523804,
+      "reliability": 0.6371737899515668,
+      "n": 200
+    }
+  },
+  "gss_subord_obj-relc": {
+    "probe_metrics": {
+      "interv": 0.45625,
+      "vzc": 0.8,
+      "vze": 0.96,
+      "test_factual_vzc": 0.85,
+      "test_cf_vzc": 0.85
+    },
+    "cf_completeness_ceiling_mean": 0.7977870106697083,
+    "cf_completeness_ceiling_median": 0.958682656288147,
+    "basis_diag": {
+      "mean_grad_norm_retention": 0.8099319338798523,
+      "median_grad_norm_retention": 0.8099319934844971,
+      "mean_grad_cosine": 0.8099323511123657,
+      "median_grad_cosine": 0.8099323511123657
+    },
+    "hdmi": {
+      "baseline_task_acc": 0.71,
+      "after_task_acc": 0.0,
+      "delta_task_acc": -0.71,
+      "completeness": 0.9560232758522034,
+      "selectivity": 0.6432769298553467,
+      "reliability": 0.7690710164122601,
+      "n": 200
+    },
+    "race": {
+      "baseline_task_acc": 0.71,
+      "after_task_acc": 0.0,
+      "delta_task_acc": -0.71,
+      "completeness": 0.9151900410652161,
+      "selectivity": 0.9093039631843567,
+      "reliability": 0.9122375069614113,
+      "n": 200
+    }
+  },
+  "agr_refl_num_pp": {
+    "probe_metrics": {
+      "interv": 0.86875,
+      "vzc": 0.975,
+      "vze": 0.98,
+      "test_factual_vzc": 0.87,
+      "test_cf_vzc": 0.87
+    },
+    "cf_completeness_ceiling_mean": 0.7363793253898621,
+    "cf_completeness_ceiling_median": 0.77582186460495,
+    "basis_diag": {
+      "mean_grad_norm_retention": 0.9414653778076172,
+      "median_grad_norm_retention": 0.9414651393890381,
+      "mean_grad_cosine": 0.9414661526679993,
+      "median_grad_cosine": 0.9414660930633545
+    },
+    "hdmi": {
+      "baseline_task_acc": 0.89,
+      "after_task_acc": 0.0,
+      "delta_task_acc": -0.89,
+      "completeness": 0.9953941106796265,
+      "selectivity": 0.7997524738311768,
+      "reliability": 0.8869124213903641,
+      "n": 200
+    },
+    "race": {
+      "baseline_task_acc": 0.89,
+      "after_task_acc": 0.0,
+      "delta_task_acc": -0.89,
+      "completeness": 0.9946883916854858,
+      "selectivity": 0.964425802230835,
+      "reliability": 0.9793233621707775,
+      "n": 200
+    }
+  },
+  "gss_subord_pp": {
+    "probe_metrics": {
+      "interv": 0.93125,
+      "vzc": 0.95,
+      "vze": 1.0,
+      "test_factual_vzc": 0.92,
+      "test_cf_vzc": 0.92
+    },
+    "cf_completeness_ceiling_mean": 0.8858733177185059,
+    "cf_completeness_ceiling_median": 0.9567066431045532,
+    "basis_diag": {
+      "mean_grad_norm_retention": 0.8157750964164734,
+      "median_grad_norm_retention": 0.8157749772071838,
+      "mean_grad_cosine": 0.8157743215560913,
+      "median_grad_cosine": 0.8157743215560913
+    },
+    "hdmi": {
+      "baseline_task_acc": 0.78,
+      "after_task_acc": 0.0,
+      "delta_task_acc": -0.78,
+      "completeness": 0.8997628688812256,
+      "selectivity": 0.9670009016990662,
+      "reliability": 0.9321709782132023,
+      "n": 200
+    },
+    "race": {
+      "baseline_task_acc": 0.78,
+      "after_task_acc": 0.0,
+      "delta_task_acc": -0.78,
+      "completeness": 0.8395190238952637,
+      "selectivity": 0.9780387878417969,
+      "reliability": 0.903500469417459,
+      "n": 200
+    }
+  },
+  "garden_mvrr_mod": {
+    "probe_metrics": {
+      "interv": 0.975,
+      "vzc": 0.825,
+      "vze": 1.0,
+      "test_factual_vzc": 0.9,
+      "test_cf_vzc": 0.9
+    },
+    "cf_completeness_ceiling_mean": 0.890484094619751,
+    "cf_completeness_ceiling_median": 0.9907219409942627,
+    "basis_diag": {
+      "mean_grad_norm_retention": 0.6564359068870544,
+      "median_grad_norm_retention": 0.6564359068870544,
+      "mean_grad_cosine": 0.6564359068870544,
+      "median_grad_cosine": 0.6564359068870544
+    },
+    "hdmi": {
+      "baseline_task_acc": 0.5,
+      "after_task_acc": 0.0,
+      "delta_task_acc": -0.5,
+      "completeness": 0.04892270639538765,
+      "selectivity": 0.9350752830505371,
+      "reliability": 0.09298070519337998,
+      "n": 200
+    },
+    "race": {
+      "baseline_task_acc": 0.5,
+      "after_task_acc": 0.0,
+      "delta_task_acc": -0.5,
+      "completeness": 0.014672571793198586,
+      "selectivity": 0.9517160654067993,
+      "reliability": 0.02889959948707885,
+      "n": 200
+    }
+  },
+  "garden_npz_v-trans_mod": {
+    "probe_metrics": {
+      "interv": 0.45625,
+      "vzc": 0.55,
+      "vze": 0.96,
+      "test_factual_vzc": 0.5,
+      "test_cf_vzc": 0.5
+    },
+    "cf_completeness_ceiling_mean": 0.5000050067901611,
+    "cf_completeness_ceiling_median": 0.5001406073570251,
+    "basis_diag": {
+      "mean_grad_norm_retention": 0.8769458532333374,
+      "median_grad_norm_retention": 0.8769458532333374,
+      "mean_grad_cosine": 0.8769452571868896,
+      "median_grad_cosine": 0.8769453167915344
+    },
+    "hdmi": {
+      "baseline_task_acc": 0.61,
+      "after_task_acc": 0.0,
+      "delta_task_acc": -0.61,
+      "completeness": 0.6263101100921631,
+      "selectivity": 0.994743287563324,
+      "reliability": 0.7686579337410611,
+      "n": 200
+    },
+    "race": {
+      "baseline_task_acc": 0.61,
+      "after_task_acc": 0.0,
+      "delta_task_acc": -0.61,
+      "completeness": 0.5810895562171936,
+      "selectivity": 0.9937785863876343,
+      "reliability": 0.7333621676038454,
+      "n": 200
+    }
+  }
+}

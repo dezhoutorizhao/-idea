@@ -1,0 +1,1720 @@
+{
+  "method": "RACE-delta-gradient",
+  "model_name": "EleutherAI/pythia-70m",
+  "layer_idx": -1,
+  "hdmi_alpha": 1.0,
+  "hdmi_inner_steps": 30,
+  "tasks": [
+    {
+      "task": "agr_gender",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.4875,
+        "validation_zc_probe_acc": 0.925,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 4,
+        "grad_rank": 8,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.925,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.925,
+        "completeness": 0.9740508794784546,
+        "selectivity": 1.0,
+        "reliability": 0.9868548871874792,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.9977852702140808,
+        "median_grad_norm_retention": 0.9977853894233704,
+        "mean_grad_cosine": 0.9977860450744629,
+        "median_grad_cosine": 0.9977861046791077
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.95,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.95,
+        "completeness": 0.9733515977859497,
+        "selectivity": 1.0,
+        "reliability": 0.9864958666106713,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.95,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.95,
+        "completeness": 0.9733067154884338,
+        "selectivity": 1.0,
+        "reliability": 0.9864728147487037,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.9991500973701477,
+        "median_grad_norm_retention": 0.9991500973701477,
+        "mean_grad_cosine": 0.9991503357887268,
+        "median_grad_cosine": 0.9991502165794373
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "agr_refl_num_obj-relc",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.9375,
+        "validation_zc_probe_acc": 0.775,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 16,
+        "grad_rank": 16,
+        "mix": 0.75
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.9,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.9,
+        "completeness": 0.7753130197525024,
+        "selectivity": 1.0,
+        "reliability": 0.8734381043674994,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 1.0000007152557373,
+        "median_grad_norm_retention": 1.0000007152557373,
+        "mean_grad_cosine": 1.0000001192092896,
+        "median_grad_cosine": 1.000000238418579
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.9,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.9,
+        "completeness": 0.7737568020820618,
+        "selectivity": 1.0,
+        "reliability": 0.8724497075783894,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.9,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.9,
+        "completeness": 0.7737568616867065,
+        "selectivity": 1.0,
+        "reliability": 0.8724497454681566,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 1.0000004768371582,
+        "median_grad_norm_retention": 1.0000003576278687,
+        "mean_grad_cosine": 1.0000001192092896,
+        "median_grad_cosine": 1.0000001192092896
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "agr_refl_num_pp",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.86875,
+        "validation_zc_probe_acc": 0.975,
+        "validation_ze_probe_acc": 0.98
+      },
+      "best_tuning_config": {
+        "rank": 8,
+        "grad_rank": 64,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.9375,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.9375,
+        "completeness": 0.9909229278564453,
+        "selectivity": 0.967097282409668,
+        "reliability": 0.9788651466347456,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.9172168970108032,
+        "median_grad_norm_retention": 0.9172168970108032,
+        "mean_grad_cosine": 0.9172165989875793,
+        "median_grad_cosine": 0.9172167181968689
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.89,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.89,
+        "completeness": 0.9953941106796265,
+        "selectivity": 0.7997524738311768,
+        "reliability": 0.8869124213903641,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.89,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.89,
+        "completeness": 0.9946883916854858,
+        "selectivity": 0.964425802230835,
+        "reliability": 0.9793233621707775,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.9414653778076172,
+        "median_grad_norm_retention": 0.9414651393890381,
+        "mean_grad_cosine": 0.9414661526679993,
+        "median_grad_cosine": 0.9414660930633545
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "agr_refl_num_subj-relc",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.95,
+        "validation_zc_probe_acc": 1.0,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 2,
+        "grad_rank": 8,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.90625,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.90625,
+        "completeness": 0.9999982714653015,
+        "selectivity": 1.0,
+        "reliability": 0.9999991352319038,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.991559624671936,
+        "median_grad_norm_retention": 0.9915595650672913,
+        "mean_grad_cosine": 0.9915602803230286,
+        "median_grad_cosine": 0.9915602803230286
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.93,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.93,
+        "completeness": 0.9999972581863403,
+        "selectivity": 1.0,
+        "reliability": 0.9999986285912907,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.93,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.93,
+        "completeness": 0.999993085861206,
+        "selectivity": 1.0,
+        "reliability": 0.9999965424186517,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.9830917119979858,
+        "median_grad_norm_retention": 0.9830917119979858,
+        "mean_grad_cosine": 0.983091413974762,
+        "median_grad_cosine": 0.9830914735794067
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "agr_sv_num_obj-relc",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.48125,
+        "validation_zc_probe_acc": 0.925,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 4,
+        "grad_rank": 32,
+        "mix": 0.75
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.9,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.9,
+        "completeness": 0.9997836947441101,
+        "selectivity": 1.0,
+        "reliability": 0.9998918351737989,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.8599056005477905,
+        "median_grad_norm_retention": 0.8873814344406128,
+        "mean_grad_cosine": 0.8599052429199219,
+        "median_grad_cosine": 0.8873813152313232
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.86,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.86,
+        "completeness": 0.9998264312744141,
+        "selectivity": 1.0,
+        "reliability": 0.9999132076050277,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.86,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.86,
+        "completeness": 0.9998697638511658,
+        "selectivity": 1.0,
+        "reliability": 0.9999348771849431,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.8705593943595886,
+        "median_grad_norm_retention": 0.8838212490081787,
+        "mean_grad_cosine": 0.8705590963363647,
+        "median_grad_cosine": 0.8838210701942444
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "agr_sv_num_pp",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.45,
+        "validation_zc_probe_acc": 1.0,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 2,
+        "grad_rank": 16,
+        "mix": 0.75
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.9875,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.9875,
+        "completeness": 0.9999966621398926,
+        "selectivity": 0.9974988102912903,
+        "reliability": 0.9987461739438777,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.7838515043258667,
+        "median_grad_norm_retention": 0.7951956987380981,
+        "mean_grad_cosine": 0.7838512659072876,
+        "median_grad_cosine": 0.7951954007148743
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 1.0,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -1.0,
+        "completeness": 0.9999607801437378,
+        "selectivity": 0.9764631390571594,
+        "reliability": 0.9880722777469215,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 1.0,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -1.0,
+        "completeness": 0.9999894499778748,
+        "selectivity": 0.9892449975013733,
+        "reliability": 0.9945882062328282,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.8060193657875061,
+        "median_grad_norm_retention": 0.8218828439712524,
+        "mean_grad_cosine": 0.8060195446014404,
+        "median_grad_cosine": 0.8218830823898315
+      },
+      "hdmi_reported": {
+        "completeness": 0.9984,
+        "selectivity": 0.9409,
+        "reliability": 0.9688
+      }
+    },
+    {
+      "task": "agr_sv_num_subj-relc",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 1.0,
+        "validation_zc_probe_acc": 1.0,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 2,
+        "grad_rank": 16,
+        "mix": 0.5
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.975,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.975,
+        "completeness": 0.9999157190322876,
+        "selectivity": 1.0,
+        "reliability": 0.9999578572402485,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.7926813364028931,
+        "median_grad_norm_retention": 0.7558624148368835,
+        "mean_grad_cosine": 0.7926817536354065,
+        "median_grad_cosine": 0.7558627128601074
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.97,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.97,
+        "completeness": 0.9994459748268127,
+        "selectivity": 1.0,
+        "reliability": 0.9997229101561705,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.97,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.97,
+        "completeness": 0.9998033046722412,
+        "selectivity": 1.0,
+        "reliability": 0.9999016421629062,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.7701010704040527,
+        "median_grad_norm_retention": 0.7156304717063904,
+        "mean_grad_cosine": 0.7701011896133423,
+        "median_grad_cosine": 0.7156307101249695
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "cleft",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 1.0,
+        "validation_zc_probe_acc": 1.0,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 8,
+        "grad_rank": 8,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.65625,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.65625,
+        "completeness": 0.9572765231132507,
+        "selectivity": 0.9989213943481445,
+        "reliability": 0.9776556760648687,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 1.000001072883606,
+        "median_grad_norm_retention": 1.000001072883606,
+        "mean_grad_cosine": 1.0000001192092896,
+        "median_grad_cosine": 1.0000001192092896
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.71,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.71,
+        "completeness": 0.8847731947898865,
+        "selectivity": 0.9961421489715576,
+        "reliability": 0.9371605947764869,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.71,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.71,
+        "completeness": 0.8847731947898865,
+        "selectivity": 0.9961421489715576,
+        "reliability": 0.9371605947764869,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 1.0000004768371582,
+        "median_grad_norm_retention": 1.0000004768371582,
+        "mean_grad_cosine": 1.0000001192092896,
+        "median_grad_cosine": 1.000000238418579
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "cleft_mod",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.475,
+        "validation_zc_probe_acc": 0.65,
+        "validation_ze_probe_acc": 0.88
+      },
+      "best_tuning_config": {
+        "rank": 8,
+        "grad_rank": 64,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.525,
+        "after_task_acc": 0.525,
+        "delta_task_acc": 0.0,
+        "completeness": 0.5249999761581421,
+        "selectivity": 0.9369049072265625,
+        "reliability": 0.6729234702070442,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.2823081612586975,
+        "median_grad_norm_retention": 0.2823081612586975,
+        "mean_grad_cosine": 0.2823079824447632,
+        "median_grad_cosine": 0.2823079824447632
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.5,
+        "selectivity": 0.4764508903026581,
+        "reliability": 0.48794147718687336,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.5,
+        "delta_task_acc": 0.0,
+        "completeness": 0.5,
+        "selectivity": 0.8780702352523804,
+        "reliability": 0.6371737899515668,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.25459495186805725,
+        "median_grad_norm_retention": 0.25459495186805725,
+        "mean_grad_cosine": 0.2545948922634125,
+        "median_grad_cosine": 0.25459492206573486
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "filler_gap_embed_3",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.46875,
+        "validation_zc_probe_acc": 0.475,
+        "validation_ze_probe_acc": 0.98
+      },
+      "best_tuning_config": {
+        "rank": 8,
+        "grad_rank": 16,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.53125,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.53125,
+        "completeness": 0.9263942837715149,
+        "selectivity": 0.9582492113113403,
+        "reliability": 0.9420525352752032,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.8548133969306946,
+        "median_grad_norm_retention": 0.8548133373260498,
+        "mean_grad_cosine": 0.854812741279602,
+        "median_grad_cosine": 0.8548126816749573
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.9289660453796387,
+        "selectivity": 0.8979386687278748,
+        "reliability": 0.9131888786356339,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.8728634119033813,
+        "selectivity": 0.9400317668914795,
+        "reliability": 0.9052032842177969,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.7783587574958801,
+        "median_grad_norm_retention": 0.7783586978912354,
+        "mean_grad_cosine": 0.778358519077301,
+        "median_grad_cosine": 0.778358519077301
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "filler_gap_embed_4",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.6375,
+        "validation_zc_probe_acc": 0.6,
+        "validation_ze_probe_acc": 0.95
+      },
+      "best_tuning_config": {
+        "rank": 4,
+        "grad_rank": 8,
+        "mix": 0.5
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.525,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.525,
+        "completeness": 0.5363224744796753,
+        "selectivity": 0.9976860880851746,
+        "reliability": 0.6976251426815032,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.8127152323722839,
+        "median_grad_norm_retention": 0.8127152919769287,
+        "mean_grad_cosine": 0.8127163052558899,
+        "median_grad_cosine": 0.8127163052558899
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.5174405574798584,
+        "selectivity": 0.9623500108718872,
+        "reliability": 0.6730127038644919,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.5090977549552917,
+        "selectivity": 0.9946461319923401,
+        "reliability": 0.673481856625707,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.8053598999977112,
+        "median_grad_norm_retention": 0.805359959602356,
+        "mean_grad_cosine": 0.8053600192070007,
+        "median_grad_cosine": 0.8053600192070007
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "filler_gap_hierarchy",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.44375,
+        "validation_zc_probe_acc": 0.95,
+        "validation_ze_probe_acc": 0.96
+      },
+      "best_tuning_config": {
+        "rank": 16,
+        "grad_rank": 64,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.59375,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.59375,
+        "completeness": 0.9999243021011353,
+        "selectivity": 0.9510354995727539,
+        "reliability": 0.9748673518340529,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.832931637763977,
+        "median_grad_norm_retention": 0.8329316973686218,
+        "mean_grad_cosine": 0.832931637763977,
+        "median_grad_cosine": 0.8329316973686218
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.55,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.55,
+        "completeness": 0.9999997019767761,
+        "selectivity": 0.5477944016456604,
+        "reliability": 0.7078386417860582,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.55,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.55,
+        "completeness": 0.9985875487327576,
+        "selectivity": 0.8786448836326599,
+        "reliability": 0.9347844464634003,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.8284208178520203,
+        "median_grad_norm_retention": 0.828420877456665,
+        "mean_grad_cosine": 0.8284212350845337,
+        "median_grad_cosine": 0.8284212946891785
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "filler_gap_obj",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 1.0,
+        "validation_zc_probe_acc": 0.95,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 32,
+        "grad_rank": 64,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.4875,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.4875,
+        "completeness": 0.6766024827957153,
+        "selectivity": 1.0,
+        "reliability": 0.8071113926348633,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.8502721786499023,
+        "median_grad_norm_retention": 0.8502721786499023,
+        "mean_grad_cosine": 0.8502718210220337,
+        "median_grad_cosine": 0.8502717614173889
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.54,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.54,
+        "completeness": 0.5930383801460266,
+        "selectivity": 1.0,
+        "reliability": 0.7445374664725865,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.54,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.54,
+        "completeness": 0.5578814148902893,
+        "selectivity": 1.0,
+        "reliability": 0.7162052377028637,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.8442736864089966,
+        "median_grad_norm_retention": 0.8442738056182861,
+        "mean_grad_cosine": 0.8442736864089966,
+        "median_grad_cosine": 0.8442738056182861
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "filler_gap_pp",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.975,
+        "validation_zc_probe_acc": 0.4,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 32,
+        "grad_rank": 32,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.45625,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.45625,
+        "completeness": 0.7357101440429688,
+        "selectivity": 0.9213116765022278,
+        "reliability": 0.8181163789331968,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.9999998807907104,
+        "median_grad_norm_retention": 0.9999998807907104,
+        "mean_grad_cosine": 1.0,
+        "median_grad_cosine": 1.0000001192092896
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.7148681879043579,
+        "selectivity": 0.8807032704353333,
+        "reliability": 0.78916772712655,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.7148683071136475,
+        "selectivity": 0.8807031512260437,
+        "reliability": 0.789167751906472,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 1.0000004768371582,
+        "median_grad_norm_retention": 1.0000004768371582,
+        "mean_grad_cosine": 1.0,
+        "median_grad_cosine": 0.9999999403953552
+      },
+      "hdmi_reported": {
+        "completeness": 0.7404,
+        "selectivity": 0.6275,
+        "reliability": 0.6793
+      }
+    },
+    {
+      "task": "filler_gap_subj",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.4625,
+        "validation_zc_probe_acc": 0.975,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 16,
+        "grad_rank": 64,
+        "mix": 0.5
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.45625,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.45625,
+        "completeness": 0.9326791763305664,
+        "selectivity": 0.975917637348175,
+        "reliability": 0.9538086317319752,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.7599732279777527,
+        "median_grad_norm_retention": 0.7599732875823975,
+        "mean_grad_cosine": 0.7599731683731079,
+        "median_grad_cosine": 0.7599731683731079
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.9520977735519409,
+        "selectivity": 0.88294517993927,
+        "reliability": 0.9162184873450854,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.905017077922821,
+        "selectivity": 0.9198806881904602,
+        "reliability": 0.9123883512451968,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.7585397958755493,
+        "median_grad_norm_retention": 0.7585397362709045,
+        "mean_grad_cosine": 0.7585396766662598,
+        "median_grad_cosine": 0.7585396766662598
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "garden_mvrr",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.99375,
+        "validation_zc_probe_acc": 1.0,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 2,
+        "grad_rank": 16,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.4875,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.4875,
+        "completeness": 0.604343593120575,
+        "selectivity": 0.9122608304023743,
+        "reliability": 0.727043887244294,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.7048598527908325,
+        "median_grad_norm_retention": 0.7048598527908325,
+        "mean_grad_cosine": 0.704860270023346,
+        "median_grad_cosine": 0.704860270023346
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.2867714762687683,
+        "selectivity": 0.9758782386779785,
+        "reliability": 0.44328057042235514,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.2648981809616089,
+        "selectivity": 0.9725925922393799,
+        "reliability": 0.4163877644539157,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.7473636865615845,
+        "median_grad_norm_retention": 0.7473636865615845,
+        "mean_grad_cosine": 0.7473632097244263,
+        "median_grad_cosine": 0.7473632097244263
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "garden_mvrr_mod",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.975,
+        "validation_zc_probe_acc": 0.825,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 2,
+        "grad_rank": 8,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.4875,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.4875,
+        "completeness": 0.5213778614997864,
+        "selectivity": 0.8897677659988403,
+        "reliability": 0.6574873715358275,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.7657860517501831,
+        "median_grad_norm_retention": 0.7657861709594727,
+        "mean_grad_cosine": 0.7657860517501831,
+        "median_grad_cosine": 0.7657861113548279
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.04892270639538765,
+        "selectivity": 0.9350752830505371,
+        "reliability": 0.09298070519337998,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.014672571793198586,
+        "selectivity": 0.9517160654067993,
+        "reliability": 0.02889959948707885,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.6564359068870544,
+        "median_grad_norm_retention": 0.6564359068870544,
+        "mean_grad_cosine": 0.6564359068870544,
+        "median_grad_cosine": 0.6564359068870544
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "garden_npz_obj",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 1.0,
+        "validation_zc_probe_acc": 0.9,
+        "validation_ze_probe_acc": 0.99
+      },
+      "best_tuning_config": {
+        "rank": 16,
+        "grad_rank": 8,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.95,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.95,
+        "completeness": 0.9839550256729126,
+        "selectivity": 0.9750975370407104,
+        "reliability": 0.9795062571202556,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 1.0,
+        "median_grad_norm_retention": 1.0,
+        "mean_grad_cosine": 1.0000001192092896,
+        "median_grad_cosine": 1.000000238418579
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.96,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.96,
+        "completeness": 0.995598554611206,
+        "selectivity": 0.9587413668632507,
+        "reliability": 0.9768224126399383,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.96,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.96,
+        "completeness": 0.995598554611206,
+        "selectivity": 0.9587413668632507,
+        "reliability": 0.9768224126399383,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 1.0,
+        "median_grad_norm_retention": 1.0,
+        "mean_grad_cosine": 1.0000001192092896,
+        "median_grad_cosine": 1.000000238418579
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "garden_npz_obj_mod",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.44375,
+        "validation_zc_probe_acc": 0.95,
+        "validation_ze_probe_acc": 0.96
+      },
+      "best_tuning_config": {
+        "rank": 2,
+        "grad_rank": 16,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.91875,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.91875,
+        "completeness": 0.9998821020126343,
+        "selectivity": 0.9991863369941711,
+        "reliability": 0.9995340979247664,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.91560298204422,
+        "median_grad_norm_retention": 0.9156030416488647,
+        "mean_grad_cosine": 0.9156025052070618,
+        "median_grad_cosine": 0.9156025648117065
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.91,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.91,
+        "completeness": 0.9999942183494568,
+        "selectivity": 0.9520960450172424,
+        "reliability": 0.9754574957009025,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.91,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.91,
+        "completeness": 0.999373197555542,
+        "selectivity": 0.9165219068527222,
+        "reliability": 0.9561561341177135,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.8804979920387268,
+        "median_grad_norm_retention": 0.8804978132247925,
+        "mean_grad_cosine": 0.8804975152015686,
+        "median_grad_cosine": 0.8804975748062134
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "garden_npz_v-trans",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.5125,
+        "validation_zc_probe_acc": 0.85,
+        "validation_ze_probe_acc": 0.99
+      },
+      "best_tuning_config": {
+        "rank": 4,
+        "grad_rank": 16,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.7375,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.7375,
+        "completeness": 0.9964631795883179,
+        "selectivity": 0.9991965293884277,
+        "reliability": 0.9978279821258773,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.9643162488937378,
+        "median_grad_norm_retention": 0.9643163084983826,
+        "mean_grad_cosine": 0.9643164873123169,
+        "median_grad_cosine": 0.9643164873123169
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.8,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.8,
+        "completeness": 0.9975326061248779,
+        "selectivity": 0.9734455943107605,
+        "reliability": 0.9853419179433808,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.8,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.8,
+        "completeness": 0.9984850883483887,
+        "selectivity": 0.9831688404083252,
+        "reliability": 0.9907677740653833,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.9188461303710938,
+        "median_grad_norm_retention": 0.9188461303710938,
+        "mean_grad_cosine": 0.9188463091850281,
+        "median_grad_cosine": 0.9188461899757385
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "garden_npz_v-trans_mod",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.45625,
+        "validation_zc_probe_acc": 0.55,
+        "validation_ze_probe_acc": 0.96
+      },
+      "best_tuning_config": {
+        "rank": 4,
+        "grad_rank": 32,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.61875,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.61875,
+        "completeness": 0.6326947808265686,
+        "selectivity": 0.9856864213943481,
+        "reliability": 0.770694386596496,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.8888213038444519,
+        "median_grad_norm_retention": 0.8888211846351624,
+        "mean_grad_cosine": 0.8888209462165833,
+        "median_grad_cosine": 0.8888209462165833
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.61,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.61,
+        "completeness": 0.6263101100921631,
+        "selectivity": 0.994743287563324,
+        "reliability": 0.7686579337410611,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.61,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.61,
+        "completeness": 0.5810895562171936,
+        "selectivity": 0.9937785863876343,
+        "reliability": 0.7333621676038454,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.8769458532333374,
+        "median_grad_norm_retention": 0.8769458532333374,
+        "mean_grad_cosine": 0.8769452571868896,
+        "median_grad_cosine": 0.8769453167915344
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "gss_subord",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 1.0,
+        "validation_zc_probe_acc": 1.0,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 8,
+        "grad_rank": 16,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.49375,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.49375,
+        "completeness": 0.9048364758491516,
+        "selectivity": 0.7389619946479797,
+        "reliability": 0.8135300994832497,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.926998496055603,
+        "median_grad_norm_retention": 0.926998496055603,
+        "mean_grad_cosine": 0.9269981384277344,
+        "median_grad_cosine": 0.9269981384277344
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.8908339142799377,
+        "selectivity": 0.683269202709198,
+        "reliability": 0.7733665874875271,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.8587303757667542,
+        "selectivity": 0.7689222693443298,
+        "reliability": 0.8113486754893497,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.9305675029754639,
+        "median_grad_norm_retention": 0.9305673241615295,
+        "mean_grad_cosine": 0.9305676817893982,
+        "median_grad_cosine": 0.9305678606033325
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "gss_subord_obj-relc",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.45625,
+        "validation_zc_probe_acc": 0.8,
+        "validation_ze_probe_acc": 0.96
+      },
+      "best_tuning_config": {
+        "rank": 32,
+        "grad_rank": 64,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.73125,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.73125,
+        "completeness": 0.9455485343933105,
+        "selectivity": 0.9160383939743042,
+        "reliability": 0.9305595642150768,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.8634365797042847,
+        "median_grad_norm_retention": 0.8634366393089294,
+        "mean_grad_cosine": 0.8634365797042847,
+        "median_grad_cosine": 0.8634366393089294
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.71,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.71,
+        "completeness": 0.9560232758522034,
+        "selectivity": 0.6432769298553467,
+        "reliability": 0.7690710164122601,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.71,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.71,
+        "completeness": 0.9151900410652161,
+        "selectivity": 0.9093039631843567,
+        "reliability": 0.9122375069614113,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.8099319338798523,
+        "median_grad_norm_retention": 0.8099319934844971,
+        "mean_grad_cosine": 0.8099323511123657,
+        "median_grad_cosine": 0.8099323511123657
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "gss_subord_pp",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.93125,
+        "validation_zc_probe_acc": 0.95,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 4,
+        "grad_rank": 32,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.84375,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.84375,
+        "completeness": 0.9334390759468079,
+        "selectivity": 0.9956749081611633,
+        "reliability": 0.9635530853977621,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.8026391267776489,
+        "median_grad_norm_retention": 0.8026391267776489,
+        "mean_grad_cosine": 0.802639365196228,
+        "median_grad_cosine": 0.8026394248008728
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.78,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.78,
+        "completeness": 0.8997628688812256,
+        "selectivity": 0.9670009016990662,
+        "reliability": 0.9321709782132023,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.78,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.78,
+        "completeness": 0.8395190238952637,
+        "selectivity": 0.9780387878417969,
+        "reliability": 0.903500469417459,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.8157750964164734,
+        "median_grad_norm_retention": 0.8157749772071838,
+        "mean_grad_cosine": 0.8157743215560913,
+        "median_grad_cosine": 0.8157743215560913
+      },
+      "hdmi_reported": {
+        "completeness": 0.9984,
+        "selectivity": 0.7371,
+        "reliability": 0.8481
+      }
+    },
+    {
+      "task": "gss_subord_subj-relc",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.95,
+        "validation_zc_probe_acc": 0.95,
+        "validation_ze_probe_acc": 0.83
+      },
+      "best_tuning_config": {
+        "rank": 2,
+        "grad_rank": 64,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.775,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.775,
+        "completeness": 0.9004985690116882,
+        "selectivity": 0.8860810399055481,
+        "reliability": 0.8932316299079426,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.6654682755470276,
+        "median_grad_norm_retention": 0.6654683351516724,
+        "mean_grad_cosine": 0.6654685735702515,
+        "median_grad_cosine": 0.6654685735702515
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.71,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.71,
+        "completeness": 0.8663693070411682,
+        "selectivity": 0.7640580534934998,
+        "reliability": 0.812003603424944,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.71,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.71,
+        "completeness": 0.807631254196167,
+        "selectivity": 0.8928916454315186,
+        "reliability": 0.8481240672442093,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.5466170310974121,
+        "median_grad_norm_retention": 0.5466169714927673,
+        "mean_grad_cosine": 0.5466170310974121,
+        "median_grad_cosine": 0.5466169714927673
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "npi_any_obj-relc",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.4875,
+        "validation_zc_probe_acc": 0.5,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 8,
+        "grad_rank": 64,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.7625,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.7625,
+        "completeness": 0.8001999855041504,
+        "selectivity": 1.0,
+        "reliability": 0.889012322523207,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.884743869304657,
+        "median_grad_norm_retention": 0.884743869304657,
+        "mean_grad_cosine": 0.8847442865371704,
+        "median_grad_cosine": 0.8847442269325256
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.78,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.78,
+        "completeness": 0.672712504863739,
+        "selectivity": 1.0,
+        "reliability": 0.8043372695612989,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.78,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.78,
+        "completeness": 0.7268393039703369,
+        "selectivity": 1.0,
+        "reliability": 0.8418146400516663,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.9097706079483032,
+        "median_grad_norm_retention": 0.9097705483436584,
+        "mean_grad_cosine": 0.9097706079483032,
+        "median_grad_cosine": 0.9097706079483032
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "npi_any_subj-relc",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.45,
+        "validation_zc_probe_acc": 0.875,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 4,
+        "grad_rank": 64,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.71875,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.71875,
+        "completeness": 0.9141025543212891,
+        "selectivity": 1.0,
+        "reliability": 0.9551239057489828,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.8623302578926086,
+        "median_grad_norm_retention": 0.8623301982879639,
+        "mean_grad_cosine": 0.8623299598693848,
+        "median_grad_cosine": 0.8623299598693848
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.73,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.73,
+        "completeness": 0.8498976230621338,
+        "selectivity": 1.0,
+        "reliability": 0.9188590892893516,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.73,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.73,
+        "completeness": 0.840690016746521,
+        "selectivity": 1.0,
+        "reliability": 0.9134509435496828,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.885628342628479,
+        "median_grad_norm_retention": 0.8856284022331238,
+        "mean_grad_cosine": 0.8856281042098999,
+        "median_grad_cosine": 0.8856282234191895
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "npi_ever_obj-relc",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.5125,
+        "validation_zc_probe_acc": 0.975,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 2,
+        "grad_rank": 8,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.75,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.75,
+        "completeness": 0.7389529943466187,
+        "selectivity": 1.0,
+        "reliability": 0.8498826550505191,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.9399510622024536,
+        "median_grad_norm_retention": 0.9399510622024536,
+        "mean_grad_cosine": 0.9399504661560059,
+        "median_grad_cosine": 0.9399504661560059
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.84,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.84,
+        "completeness": 0.6277658939361572,
+        "selectivity": 1.0,
+        "reliability": 0.7713220873948571,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.84,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.84,
+        "completeness": 0.6358025670051575,
+        "selectivity": 1.0,
+        "reliability": 0.7773585632409312,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.9641870856285095,
+        "median_grad_norm_retention": 0.9641871452331543,
+        "mean_grad_cosine": 0.9641875624656677,
+        "median_grad_cosine": 0.9641874432563782
+      },
+      "hdmi_reported": null
+    },
+    {
+      "task": "npi_ever_subj-relc",
+      "sample_sizes": {
+        "train": 800,
+        "validation": 200,
+        "test": 200
+      },
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.475,
+        "validation_zc_probe_acc": 1.0,
+        "validation_ze_probe_acc": 1.0
+      },
+      "best_tuning_config": {
+        "rank": 2,
+        "grad_rank": 4,
+        "mix": 1.0
+      },
+      "best_tuning_metrics": {
+        "baseline_task_acc": 0.73125,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.73125,
+        "completeness": 0.6533597707748413,
+        "selectivity": 1.0,
+        "reliability": 0.7903419230691401,
+        "n": 160
+      },
+      "tuning_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.9840103983879089,
+        "median_grad_norm_retention": 0.9840103983879089,
+        "mean_grad_cosine": 0.9840097427368164,
+        "median_grad_cosine": 0.9840098023414612
+      },
+      "hdmi_local": {
+        "baseline_task_acc": 0.68,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.68,
+        "completeness": 0.645237147808075,
+        "selectivity": 1.0,
+        "reliability": 0.7843697770567969,
+        "n": 200
+      },
+      "race_local": {
+        "baseline_task_acc": 0.68,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.68,
+        "completeness": 0.6359308362007141,
+        "selectivity": 1.0,
+        "reliability": 0.7774544274608488,
+        "n": 200
+      },
+      "race_test_basis_diagnostics": {
+        "mean_grad_norm_retention": 0.9781366586685181,
+        "median_grad_norm_retention": 0.9781365990638733,
+        "mean_grad_cosine": 0.9781365394592285,
+        "median_grad_cosine": 0.9781364798545837
+      },
+      "hdmi_reported": null
+    }
+  ],
+  "means": {
+    "hdmi_reported": {
+      "completeness": 0.9123999999999999,
+      "selectivity": 0.7685,
+      "reliability": 0.8320666666666666
+    },
+    "hdmi_local": {
+      "completeness": 0.7998844484059975,
+      "selectivity": 0.905797416793889,
+      "reliability": 0.8176093945294433
+    },
+    "race_local": {
+      "completeness": 0.7861705810987744,
+      "selectivity": 0.9574988217189394,
+      "reliability": 0.8353764706572377
+    }
+  }
+}

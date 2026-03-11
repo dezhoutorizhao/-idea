@@ -1,0 +1,62 @@
+{
+  "(100, 'agr_sv_num_pp')": {
+    "interv_acc": 0.45,
+    "vzc_acc": 1.0,
+    "vze_acc": 1.0,
+    "metrics": {
+      "completeness": 0.9996519684791565,
+      "selectivity": 0.9809291362762451,
+      "reliability": 0.9902020565253318
+    }
+  },
+  "(100, 'gss_subord_pp')": {
+    "interv_acc": 0.975,
+    "vzc_acc": 0.725,
+    "vze_acc": 1.0,
+    "metrics": {
+      "completeness": 0.5609032511711121,
+      "selectivity": 0.9415166974067688,
+      "reliability": 0.7029988875689774
+    }
+  },
+  "(100, 'filler_gap_pp')": {
+    "interv_acc": 0.74375,
+    "vzc_acc": 0.65,
+    "vze_acc": 1.0,
+    "metrics": {
+      "completeness": 0.5002914667129517,
+      "selectivity": 0.9169755578041077,
+      "reliability": 0.647379835266226
+    }
+  },
+  "(150, 'agr_sv_num_pp')": {
+    "interv_acc": 0.45,
+    "vzc_acc": 1.0,
+    "vze_acc": 1.0,
+    "metrics": {
+      "completeness": 0.9999607801437378,
+      "selectivity": 0.9764631390571594,
+      "reliability": 0.9880722777469215
+    }
+  },
+  "(150, 'gss_subord_pp')": {
+    "interv_acc": 0.93125,
+    "vzc_acc": 0.95,
+    "vze_acc": 1.0,
+    "metrics": {
+      "completeness": 0.8997628688812256,
+      "selectivity": 0.9670009016990662,
+      "reliability": 0.9321709782132023
+    }
+  },
+  "(150, 'filler_gap_pp')": {
+    "interv_acc": 0.975,
+    "vzc_acc": 0.4,
+    "vze_acc": 1.0,
+    "metrics": {
+      "completeness": 0.7148681879043579,
+      "selectivity": 0.8807032704353333,
+      "reliability": 0.78916772712655
+    }
+  }
+}

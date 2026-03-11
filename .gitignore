@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+causalgym/
+cg_hdmi_three_tasks/
+cg_local_json/
+hdmi_supplementary/
+*.zip
+*.pdf
