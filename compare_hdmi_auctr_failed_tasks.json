@@ -1,0 +1,104 @@
+{
+  "method": "AUCTR-RACE",
+  "tasks": [
+    {
+      "task": "garden_mvrr_mod",
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.975,
+        "validation_zc_probe_acc": 0.825,
+        "validation_ze_probe_acc": 1.0
+      },
+      "base_race_config": {
+        "rank": 2,
+        "grad_rank": 8,
+        "mix": 1.0
+      },
+      "hdmi_tune": {
+        "completeness": 0.05032628774642944,
+        "selectivity": 0.9474737048149109,
+        "reliability": 0.0955759362765709
+      },
+      "selected_auctr_config": {
+        "beta_base": 0.1,
+        "beta_scale": 0.4,
+        "beta_max": 0.2,
+        "k_neighbors": 4
+      },
+      "selected_auctr_tune_metrics": {
+        "baseline_task_acc": 0.4875,
+        "after_task_acc": 0.475,
+        "delta_task_acc": -0.0125,
+        "completeness": 0.8895260095596313,
+        "selectivity": 0.9942845106124878,
+        "reliability": 0.9389924550817049,
+        "n": 160
+      },
+      "hdmi_test": {
+        "completeness": 0.04892270639538765,
+        "selectivity": 0.9350752830505371,
+        "reliability": 0.09298070519337998
+      },
+      "auctr_test": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.45,
+        "delta_task_acc": -0.05,
+        "completeness": 0.8751579523086548,
+        "selectivity": 0.9891931414604187,
+        "reliability": 0.9286879993228903,
+        "n": 200
+      }
+    },
+    {
+      "task": "garden_npz_v-trans_mod",
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.45625,
+        "validation_zc_probe_acc": 0.55,
+        "validation_ze_probe_acc": 0.96
+      },
+      "base_race_config": {
+        "rank": 4,
+        "grad_rank": 32,
+        "mix": 1.0
+      },
+      "hdmi_tune": {
+        "completeness": 0.611947238445282,
+        "selectivity": 0.9927387237548828,
+        "reliability": 0.757162129452385
+      },
+      "selected_auctr_config": null,
+      "selected_auctr_tune_metrics": null,
+      "hdmi_test": {
+        "completeness": 0.6263101100921631,
+        "selectivity": 0.994743287563324,
+        "reliability": 0.7686579337410611
+      },
+      "auctr_test": null
+    },
+    {
+      "task": "garden_npz_obj_mod",
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.44375,
+        "validation_zc_probe_acc": 0.95,
+        "validation_ze_probe_acc": 0.96
+      },
+      "base_race_config": {
+        "rank": 2,
+        "grad_rank": 16,
+        "mix": 1.0
+      },
+      "hdmi_tune": {
+        "completeness": 0.9999950528144836,
+        "selectivity": 0.971670925617218,
+        "reliability": 0.9856295424450686
+      },
+      "selected_auctr_config": null,
+      "selected_auctr_tune_metrics": null,
+      "hdmi_test": {
+        "completeness": 0.9999942183494568,
+        "selectivity": 0.9520960450172424,
+        "reliability": 0.9754574957009025
+      },
+      "auctr_test": null
+    }
+  ]
+}
