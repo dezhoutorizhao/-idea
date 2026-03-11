@@ -1,0 +1,166 @@
+{
+  "method": "BCCI-metric-aligned-hinge",
+  "tasks": [
+    {
+      "task": "garden_mvrr_mod",
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.975,
+        "validation_zc_probe_acc": 0.825,
+        "validation_ze_probe_acc": 1.0
+      },
+      "base_race_config": {
+        "rank": 2,
+        "grad_rank": 8,
+        "mix": 1.0
+      },
+      "search_grid": {
+        "gamma": [
+          0.1,
+          0.5
+        ],
+        "trust_beta": [
+          0.05,
+          0.1,
+          0.2
+        ],
+        "sel_weight": [
+          1.0,
+          2.0
+        ],
+        "anchor_weight": [
+          0.05,
+          0.1
+        ]
+      },
+      "hdmi_tune": {
+        "completeness": 0.05032628774642944,
+        "selectivity": 0.9474737048149109,
+        "reliability": 0.0955759362765709
+      },
+      "hdmi_test": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.04892270639538765,
+        "selectivity": 0.9350752830505371,
+        "reliability": 0.09298070519337998,
+        "n": 200
+      },
+      "selected_metric_aligned_config": null,
+      "selected_metric_aligned_tune_metrics": null,
+      "metric_aligned_test": null,
+      "mctr_reference_test": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.48,
+        "delta_task_acc": -0.020000000000000018,
+        "completeness": 0.8946058750152588,
+        "selectivity": 0.9898775219917297,
+        "reliability": 0.9398334287857317,
+        "n": 200
+      },
+      "bcci_reference_test": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "completeness": 0.753187358379364,
+        "selectivity": 0.9263052344322205,
+        "reliability": 0.8308240180941836,
+        "n": 200
+      }
+    },
+    {
+      "task": "gss_subord_pp",
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.93125,
+        "validation_zc_probe_acc": 0.95,
+        "validation_ze_probe_acc": 1.0
+      },
+      "base_race_config": {
+        "rank": 4,
+        "grad_rank": 32,
+        "mix": 1.0
+      },
+      "search_grid": {
+        "gamma": [
+          0.1,
+          0.5
+        ],
+        "trust_beta": [
+          0.05,
+          0.1,
+          0.2
+        ],
+        "sel_weight": [
+          1.0,
+          2.0
+        ],
+        "anchor_weight": [
+          0.05,
+          0.1
+        ]
+      },
+      "hdmi_tune": {
+        "completeness": 0.8908058404922485,
+        "selectivity": 0.9853383898735046,
+        "reliability": 0.935690527291268
+      },
+      "hdmi_test": {
+        "baseline_task_acc": 0.78,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.78,
+        "completeness": 0.8997628688812256,
+        "selectivity": 0.9670009016990662,
+        "reliability": 0.9321709782132023,
+        "n": 200
+      },
+      "selected_metric_aligned_config": {
+        "gamma": 0.5,
+        "trust_beta": 0.2,
+        "sel_weight": 1.0,
+        "anchor_weight": 0.05
+      },
+      "selected_metric_aligned_tune_metrics": {
+        "baseline_task_acc": 0.84375,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.84375,
+        "completeness": 0.927096962928772,
+        "selectivity": 0.9994591474533081,
+        "reliability": 0.9619190790250246,
+        "n": 160,
+        "margin_reserve_rate": 0.825
+      },
+      "metric_aligned_test": {
+        "baseline_task_acc": 0.78,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.78,
+        "completeness": 0.9543089270591736,
+        "selectivity": 0.9895161390304565,
+        "reliability": 0.9715936901253562,
+        "n": 200,
+        "margin_reserve_rate": 0.91
+      },
+      "mctr_reference_test": {
+        "baseline_task_acc": 0.78,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.78,
+        "completeness": 0.9881648421287537,
+        "selectivity": 0.9848390221595764,
+        "reliability": 0.9864991285380328,
+        "n": 200
+      },
+      "bcci_reference_test": {
+        "baseline_task_acc": 0.78,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.78,
+        "completeness": 0.999459981918335,
+        "selectivity": 0.9648997783660889,
+        "reliability": 0.981875860059569,
+        "n": 200
+      }
+    }
+  ],
+  "model_name": "EleutherAI/pythia-70m",
+  "layer_idx": -1,
+  "hdmi_alpha": 1.0,
+  "hdmi_inner_steps": 30
+}
