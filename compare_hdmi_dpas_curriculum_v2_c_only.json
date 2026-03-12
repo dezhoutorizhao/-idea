@@ -1,0 +1,397 @@
+{
+  "method": "DPAS-curriculum-completeness-first-v2",
+  "tasks": [
+    {
+      "task": "agr_refl_num_obj-relc",
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.9375,
+        "validation_zc_probe_acc": 0.775,
+        "validation_ze_probe_acc": 1.0
+      },
+      "base_dual_protocol_result": {
+        "hdmi_test": {
+          "baseline_task_acc": 0.9,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.9,
+          "completeness": 0.7737568020820618,
+          "selectivity": 1.0,
+          "reliability": 0.8724497075783894,
+          "n": 200,
+          "delta_task_acc_positive": 0.9
+        },
+        "reliability_max_test": {
+          "baseline_task_acc": 0.9,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.9,
+          "completeness": 0.5723352432250977,
+          "selectivity": 1.0,
+          "reliability": 0.728006632589559,
+          "n": 200,
+          "margin_reserve_rate": 1.0,
+          "delta_task_acc_positive": 0.9
+        },
+        "completeness_max_test": {
+          "baseline_task_acc": 0.9,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.9,
+          "completeness": 0.5723352432250977,
+          "selectivity": 1.0,
+          "reliability": 0.728006632589559,
+          "n": 200,
+          "margin_reserve_rate": 1.0,
+          "delta_task_acc_positive": 0.9
+        },
+        "completeness_max_config": {
+          "rank": 8,
+          "ge_weight": 0.1,
+          "gamma": 0.5,
+          "trust_beta": 0.05
+        }
+      },
+      "selection_protocol": {
+        "description": "v2 completeness-first curriculum: maximize completeness subject first to after_task_acc <= HDMI_tune.after and selectivity >= HDMI_tune.selectivity; fallback to unconditional completeness-max v2 curriculum",
+        "hdmi_tune": {
+          "baseline_task_acc": 0.9,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.9,
+          "completeness": 0.7753129005432129,
+          "selectivity": 1.0,
+          "reliability": 0.8734380287207539,
+          "n": 160,
+          "delta_task_acc_positive": 0.9
+        },
+        "feasible_found": true
+      },
+      "selected_curriculum_v2": {
+        "config": {
+          "rank": 8,
+          "ge_weight": 0.1,
+          "gamma": 0.5,
+          "phase1_frac": 0.9,
+          "alpha1_scale": 1.5,
+          "alpha2_scale": 1.0,
+          "comp1_weight": 6.0,
+          "comp2_weight": 2.0,
+          "trust_beta2": 0.0
+        },
+        "tune_metrics": {
+          "baseline_task_acc": 0.9,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.9,
+          "delta_task_acc_positive": 0.9,
+          "completeness": 0.7387152910232544,
+          "selectivity": 1.0,
+          "reliability": 0.8497254201562223,
+          "n": 160,
+          "margin_reserve_rate": 1.0
+        }
+      },
+      "curriculum_v2_test": {
+        "baseline_task_acc": 0.9,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.9,
+        "delta_task_acc_positive": 0.9,
+        "completeness": 0.7372848391532898,
+        "selectivity": 1.0,
+        "reliability": 0.8487783029157558,
+        "n": 200,
+        "margin_reserve_rate": 1.0
+      }
+    },
+    {
+      "task": "agr_refl_num_pp",
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.86875,
+        "validation_zc_probe_acc": 0.975,
+        "validation_ze_probe_acc": 0.98
+      },
+      "base_dual_protocol_result": {
+        "hdmi_test": {
+          "baseline_task_acc": 0.89,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.89,
+          "completeness": 0.9953941106796265,
+          "selectivity": 0.7997524738311768,
+          "reliability": 0.8869124213903641,
+          "n": 200,
+          "delta_task_acc_positive": 0.89
+        },
+        "reliability_max_test": {
+          "baseline_task_acc": 0.89,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.89,
+          "completeness": 0.8666485548019409,
+          "selectivity": 0.8418136835098267,
+          "reliability": 0.8540506139839326,
+          "n": 200,
+          "margin_reserve_rate": 1.0,
+          "delta_task_acc_positive": 0.89
+        },
+        "completeness_max_test": {
+          "baseline_task_acc": 0.89,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.89,
+          "completeness": 0.8666485548019409,
+          "selectivity": 0.8418136835098267,
+          "reliability": 0.8540506139839326,
+          "n": 200,
+          "margin_reserve_rate": 1.0,
+          "delta_task_acc_positive": 0.89
+        },
+        "completeness_max_config": {
+          "rank": 2,
+          "ge_weight": 1.0,
+          "gamma": 0.5,
+          "trust_beta": 0.05
+        }
+      },
+      "selection_protocol": {
+        "description": "v2 completeness-first curriculum: maximize completeness subject first to after_task_acc <= HDMI_tune.after and selectivity >= HDMI_tune.selectivity; fallback to unconditional completeness-max v2 curriculum",
+        "hdmi_tune": {
+          "baseline_task_acc": 0.9375,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.9375,
+          "completeness": 0.995094895362854,
+          "selectivity": 0.7925659418106079,
+          "reliability": 0.882357890370322,
+          "n": 160,
+          "delta_task_acc_positive": 0.9375
+        },
+        "feasible_found": true
+      },
+      "selected_curriculum_v2": {
+        "config": {
+          "rank": 2,
+          "ge_weight": 1.0,
+          "gamma": 0.5,
+          "phase1_frac": 0.9,
+          "alpha1_scale": 1.0,
+          "alpha2_scale": 1.0,
+          "comp1_weight": 6.0,
+          "comp2_weight": 1.0,
+          "trust_beta2": 0.05
+        },
+        "tune_metrics": {
+          "baseline_task_acc": 0.9375,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.9375,
+          "delta_task_acc_positive": 0.9375,
+          "completeness": 0.9738173484802246,
+          "selectivity": 0.7929204702377319,
+          "reliability": 0.8741078628246823,
+          "n": 160,
+          "margin_reserve_rate": 1.0
+        }
+      },
+      "curriculum_v2_test": {
+        "baseline_task_acc": 0.89,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.89,
+        "delta_task_acc_positive": 0.89,
+        "completeness": 0.9745241403579712,
+        "selectivity": 0.7904461622238159,
+        "reliability": 0.8728859235503009,
+        "n": 200,
+        "margin_reserve_rate": 1.0
+      }
+    },
+    {
+      "task": "filler_gap_pp",
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.975,
+        "validation_zc_probe_acc": 0.4,
+        "validation_ze_probe_acc": 1.0
+      },
+      "base_dual_protocol_result": {
+        "hdmi_test": {
+          "baseline_task_acc": 0.5,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.5,
+          "completeness": 0.7148681879043579,
+          "selectivity": 0.8807032704353333,
+          "reliability": 0.78916772712655,
+          "n": 200,
+          "delta_task_acc_positive": 0.5
+        },
+        "reliability_max_test": {
+          "baseline_task_acc": 0.5,
+          "after_task_acc": 0.06,
+          "delta_task_acc": -0.44,
+          "completeness": 0.6080893874168396,
+          "selectivity": 0.9796980023384094,
+          "reliability": 0.7504077202831199,
+          "n": 200,
+          "margin_reserve_rate": 0.66,
+          "delta_task_acc_positive": 0.44
+        },
+        "completeness_max_test": {
+          "baseline_task_acc": 0.5,
+          "after_task_acc": 0.06,
+          "delta_task_acc": -0.44,
+          "completeness": 0.6080893874168396,
+          "selectivity": 0.9796980023384094,
+          "reliability": 0.7504077202831199,
+          "n": 200,
+          "margin_reserve_rate": 0.66,
+          "delta_task_acc_positive": 0.44
+        },
+        "completeness_max_config": {
+          "rank": 8,
+          "ge_weight": 0.1,
+          "gamma": 0.5,
+          "trust_beta": 0.1
+        }
+      },
+      "selection_protocol": {
+        "description": "v2 completeness-first curriculum: maximize completeness subject first to after_task_acc <= HDMI_tune.after and selectivity >= HDMI_tune.selectivity; fallback to unconditional completeness-max v2 curriculum",
+        "hdmi_tune": {
+          "baseline_task_acc": 0.45625,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.45625,
+          "completeness": 0.7357098460197449,
+          "selectivity": 0.9213116765022278,
+          "reliability": 0.8181161946707313,
+          "n": 160,
+          "delta_task_acc_positive": 0.45625
+        },
+        "feasible_found": true
+      },
+      "selected_curriculum_v2": {
+        "config": {
+          "rank": 8,
+          "ge_weight": 0.1,
+          "gamma": 0.5,
+          "phase1_frac": 0.9,
+          "alpha1_scale": 1.5,
+          "alpha2_scale": 1.0,
+          "comp1_weight": 6.0,
+          "comp2_weight": 2.0,
+          "trust_beta2": 0.0
+        },
+        "tune_metrics": {
+          "baseline_task_acc": 0.45625,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.45625,
+          "delta_task_acc_positive": 0.45625,
+          "completeness": 0.6592998504638672,
+          "selectivity": 0.9984899759292603,
+          "reliability": 0.7941951156197096,
+          "n": 160,
+          "margin_reserve_rate": 1.0
+        }
+      },
+      "curriculum_v2_test": {
+        "baseline_task_acc": 0.5,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.5,
+        "delta_task_acc_positive": 0.5,
+        "completeness": 0.6194125413894653,
+        "selectivity": 0.9889826774597168,
+        "reliability": 0.7617384907335436,
+        "n": 200,
+        "margin_reserve_rate": 1.0
+      }
+    },
+    {
+      "task": "npi_any_subj-relc",
+      "probe_metrics": {
+        "interventional_zc_probe_acc": 0.45,
+        "validation_zc_probe_acc": 0.875,
+        "validation_ze_probe_acc": 1.0
+      },
+      "base_dual_protocol_result": {
+        "hdmi_test": {
+          "baseline_task_acc": 0.73,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.73,
+          "completeness": 0.8498976230621338,
+          "selectivity": 1.0,
+          "reliability": 0.9188590892893516,
+          "n": 200,
+          "delta_task_acc_positive": 0.73
+        },
+        "reliability_max_test": {
+          "baseline_task_acc": 0.73,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.73,
+          "completeness": 0.7934848070144653,
+          "selectivity": 1.0,
+          "reliability": 0.8848525546117315,
+          "n": 200,
+          "margin_reserve_rate": 0.99,
+          "delta_task_acc_positive": 0.73
+        },
+        "completeness_max_test": {
+          "baseline_task_acc": 0.73,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.73,
+          "completeness": 0.7934848070144653,
+          "selectivity": 1.0,
+          "reliability": 0.8848525546117315,
+          "n": 200,
+          "margin_reserve_rate": 0.99,
+          "delta_task_acc_positive": 0.73
+        },
+        "completeness_max_config": {
+          "rank": 2,
+          "ge_weight": 0.1,
+          "gamma": 0.5,
+          "trust_beta": 0.05
+        }
+      },
+      "selection_protocol": {
+        "description": "v2 completeness-first curriculum: maximize completeness subject first to after_task_acc <= HDMI_tune.after and selectivity >= HDMI_tune.selectivity; fallback to unconditional completeness-max v2 curriculum",
+        "hdmi_tune": {
+          "baseline_task_acc": 0.71875,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.71875,
+          "completeness": 0.8530017137527466,
+          "selectivity": 1.0,
+          "reliability": 0.9206701828298804,
+          "n": 160,
+          "delta_task_acc_positive": 0.71875
+        },
+        "feasible_found": true
+      },
+      "selected_curriculum_v2": {
+        "config": {
+          "rank": 2,
+          "ge_weight": 0.1,
+          "gamma": 0.5,
+          "phase1_frac": 0.9,
+          "alpha1_scale": 1.5,
+          "alpha2_scale": 1.0,
+          "comp1_weight": 6.0,
+          "comp2_weight": 2.0,
+          "trust_beta2": 0.0
+        },
+        "tune_metrics": {
+          "baseline_task_acc": 0.71875,
+          "after_task_acc": 0.0,
+          "delta_task_acc": -0.71875,
+          "delta_task_acc_positive": 0.71875,
+          "completeness": 0.9786781072616577,
+          "selectivity": 1.0,
+          "reliability": 0.9892241726184182,
+          "n": 160,
+          "margin_reserve_rate": 1.0
+        }
+      },
+      "curriculum_v2_test": {
+        "baseline_task_acc": 0.73,
+        "after_task_acc": 0.0,
+        "delta_task_acc": -0.73,
+        "delta_task_acc_positive": 0.73,
+        "completeness": 0.9785366654396057,
+        "selectivity": 1.0,
+        "reliability": 0.9891519141775533,
+        "n": 200,
+        "margin_reserve_rate": 1.0
+      }
+    }
+  ],
+  "model_name": "EleutherAI/pythia-70m",
+  "layer_idx": -1,
+  "hdmi_alpha": 1.0,
+  "hdmi_inner_steps": 30
+}
